@@ -113,4 +113,7 @@ Secara keseluruhan, hasil dari analisis ini memberikan alat yang berharga bagi D
 
 ## Try App [HERE](https://huggingface.co/spaces/Bagusaja/Machine_Learning_concept_Milestone_2)
 ### Notes
-Saat menjalankan link diatas harap pastikan **restart Space** pada Hugging Face kemudian tunggu hingga App muncul mungkin membutuhkan waktu untuk load appnya, and enjoy!
+- Saat menjalankan link diatas harap pastikan **restart Space** pada Hugging Face kemudian tunggu hingga App muncul, mungkin membutuhkan waktu untuk load appnya.
+- Dalam App terdapat Bar kiri dimana berisi EDA(Exploratory Data Analyst) dan Bardown kedua berisi Prediction.
+- Laman Prediction silahkan sesuaikan atribut pada gameplay yang sudah anda mainkan misalnya, dan lakukan **predict** dipaling bawah laman page untuk melihat hasilnya.
+- Terakhir Enjoy The App
