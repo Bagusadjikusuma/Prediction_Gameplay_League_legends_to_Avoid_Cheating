@@ -1,0 +1,1 @@
+["blueFirstBlood", "blueEliteMonsters", "blueDragons", "blueHeralds"]
