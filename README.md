@@ -90,8 +90,8 @@ Project ini  dikerjakan dalam format ***notebook*** dan ***Model Deployment*** d
     │   └── eda.py
     │   └── prediction.py
     │   └── model.pkl
-    ├── P1M2_raka_ardhi.ipynb
-    ├── P1M2_raka_ardhi_inf.ipynb
+    ├── P1M2_bagus_adji.ipynb
+    ├── P1M2_bagus_adji_inf.ipynb
     ├── url.txt
     └── README.md
     └── depan.jpg
