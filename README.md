@@ -1,84 +1,51 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/NhV1zixU)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=15353735&assignment_repo_type=AssignmentRepo)
-# Phase 1 Milestone 2
 
-_Milestone 2 ini dibuat guna mengevaluasi pembelajaran pada Hacktiv8 Data Science Fulltime Program khususnya pada Phase 1._
-
----
-
-## Assignment Objectives
-
-Milestone 2 ini dibuat guna mengevaluasi konsep Machine Learning pada pembelajaran Phase 1 sebagai berikut:
-
-- Mampu memahami konsep Machine Learning secara keseluruhan.
-- Mampu mempersiapkan data untuk digunakan dalam model Supervised Learning (Classification atau Regression).
-- Mampu mengimplementasikan Supervised Learning (Classification atau Regression) dengan data yang dipilih.
-- Mampu melakukan Hyperparameter Tuning dan Model Improvement.
-- Mampu melakukan Model Deployment.
+# Prediction League Of Legends Gameplay
+![image](/depan.jpg)
+_Di buat Guna Mengevaluasi dari setiap match per-game dari Game League Of Legends pada developer Riot._
 
 ---
 
-## Topik
+## Background
 
-Anda dipersilakan untuk memilih salah satu topik mengenai Supervised Learning : Regression atau Classification.
+League of Legends adalah permainan MOBA dengan Riot Sebagai Developersnya. Game yang sangat kompetitif dimana keseimbangan permainan merupakan kunci utama untuk memberikan pengalaman yang adil dan menyenangkan. Pada tier Diamond Rank, pemain memiliki keterampilan dan strategi yang sangat terampil, sehingga keseimbangan di awal permainan menjadi faktor kritis untuk menentukan hasil pertandingan. Meskipun demikian, sering kali ada ketidakseimbangan yang dapat mempengaruhi jalannya permainan secara signifikan.
 
----
+## Objective
 
-## Dataset
+Dalam 10 menit pertama statistik awal game pada tier/peringkatnya yaitu Diamond Rank, dengan tujuan membantu Developers Game 'RIOT' untuk mengimprove Arena Battle yang lebih seimbang antara Blue team dan Red Team, dimana kemenangan antara 2 tim ini mempengaruhi skema permainan yang seharusnya bisa lebih seimbang antara kemampuan antara player 1 dan yang lainnya. dengan mengambil pov game dari Blue Team dengan 1 game berisi 10, blue team 5 player begitu juga read team.
 
-### Ketentuan Dataset
-1. Pilihlah dataset yang paling nyaman digunakan karena tidak ada batasan untuk memilih dataset dalam mengerjakan Milestone 2. 
+## Problem Statement
+Dalam 10 menit pertama permainan di tier Diamond Rank, ada indikasi bahwa salah satu tim (Blue Team) mungkin mengalami ketidakadilan dibandingkan tim lawan (Red Team). Masalah ini mencakup beberapa aspek:
 
-2. **Konsultasikan terlebih dahulu dataset yang hendak digunakan ke buddy masing-masing student. Jika disetujui, maka silakan dikerjakan. Jika tidak disetujui, maka cari dataset yang lain dan konsultasikan lagi mengenai dataset yang baru ini.**
+1. Ketidakseimbangan Statistik Awal: Data statistik menunjukkan adanya perbedaan signifikan dalam performa antara Blue Team dan Red Team, seperti perolehan gold, level, dan kontribusi dalam pertarungan tim. Hal ini dapat menciptakan keuntungan yang tidak adil bagi salah satu tim.
 
-3. Student tidak boleh menggunakan dataset yang sudah dipakai dalam tugas Live Code, Graded Challenge, Non Graded Challenge, dan Milestone dari Phase 0 hingga Phase 1.
+2. Perbedaan Kemampuan Pemain: Ada kemungkinan adanya perbedaan dalam keterampilan atau strategi antara pemain di kedua tim yang mempengaruhi keseimbangan permainan di fase awal.
 
-4. Student juga tidak boleh menggunakan dataset yang sudah dipakai dalam sesi pembelajaran saat dikelas bersama instruktur. Carilah dataset yang baru untuk tugas Milestone 2 ini.
-
-5. **Student dilarang untuk melakukan scraping dataset** karena dikhawatirkan proses pembuatan scraper dan proses scraping akan memakan waktu. Gunakan public dataset yang tersedia diberbagai macam situs Internet.
-
-### Data Sources
-Student dapat memilih dataset dari salah satu repository dibawah ini. Popular open data repositories :
-
-- [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php)
-- [Kaggle datasets](https://www.kaggle.com/datasets)
-- [Amazon’s AWS datasets](https://registry.opendata.aws/)
-
-Meta portals :
-
-- [Data Portals](http://dataportals.org/)
-- [OpenDataMonitor](https://opendatamonitor.eu/frontend/web/index.php?r=dashboard%2Findex)
-- [Quandl](https://www.quandl.com/)
-- Sumber lain yang kredibel.
+3. Pengaruh pada Skema Permainan: Ketidakseimbangan di awal permainan dapat mempengaruhi strategi yang digunakan oleh kedua tim dan memengaruhi skema permainan secara keseluruhan, yang pada akhirnya berdampak pada hasil pertandingan.
 
 ---
 
-## Conceptual Problems
+## Data Source 
 
-*Jawab pertanyaan berikut:*
-
-1. Jelaskan latar belakang adanya bagging dan cara kerja bagging !
-
-2. Jelaskan perbedaan cara kerja algoritma Random Forest dengan algoritma boosting yang Anda pilih !
-
-3. Jelaskan apa yang dimaksud dengan Cross Validation !
+Dataset yang digunakan : [Kaggle.com](https://www.kaggle.com/datasets/bobbyscience/league-of-legends-diamond-ranked-games-10-min). Dataset ini bertujuan untuk menangkap gambaran yang komprehensif tentang 10 menit pertama Gameplay League Legends pada Rank Diamond
 
 ---
 
-## Assignment Instructions
+---
 
-Milestones 2 dikerjakan dalam format ***notebook*** dan ***Model Deployment*** dengan beberapa *kriteria wajib* di bawah ini:
+## Instruction Projects
+
+Project ini  dikerjakan dalam format ***notebook*** dan ***Model Deployment*** dengan  *step pengerjaan* di bawah ini:
 
 1. Machine learning framework yang digunakan adalah *Scikit-Learn*.
 
 2. Ada penggunaan library visualisasi, seperti *matplotlib*, *seaborn*, atau yang lain.
 
-3. Isi *notebook* harus mengikuti *outline* di bawah ini:
+3. Pengisian *notebook* mengikuti *outline* di bawah ini:
    1. Perkenalan
-      > Bab pengenalan harus diisi dengan identitas, gambaran besar dataset yang digunakan, dan *objective* yang ingin dicapai.
+      > Bab pengenalan berisi dengan identitas, gambaran besar dataset yang digunakan, dan *objective* yang ingin dicapai.
    
    2. Import Libraries
-      > *Cell* pertama pada *notebook* **harus berisi dan hanya berisi** semua *library* yang digunakan dalam *project*.
+      > *Cell* pertama pada *notebook* ** berisi ** semua *library* yang digunakan dalam *project*.
    
    3. Data Loading
       > Bagian ini berisi proses penyiapan data sebelum dilakukan eksplorasi data lebih lanjut. Proses Data Loading dapat berupa memberi nama baru untuk setiap kolom, mengecek ukuran dataset, dll.
@@ -99,30 +66,24 @@ Milestones 2 dikerjakan dalam format ***notebook*** dan ***Model Deployment*** d
       > Pada bagian ini, dilakukan evaluasi model yang harus menunjukkan bagaimana performa model berdasarkan metrics yang dipilih. Hal ini harus dibuktikan dengan visualisasi tren performa dan/atau tingkat kesalahan model. **Lakukan analisis terkait dengan hasil pada model dan tuliskan hasil analisisnya**.
 
    9. Model Saving
-      > Pada bagian ini, dilakukan proses penyimpanan model dan file-file lain yang terkait dengan hasil proses pembuatan model. **Dengan melihat hasil Model Evaluation, pilihlah satu model terbaik untuk disimpan. Model terbaik ini akan digunakan kembali dalam melakukan Model Inference dan Model Deployment.**
+      > Pada bagian ini, dilakukan proses penyimpanan model dan file-file lain yang terkait dengan hasil proses pembuatan model. **Dengan melihat hasil Model Evaluation,  model terbaik  disimpan. Model terbaik ini akan digunakan kembali dalam melakukan Model Inference dan Model Deployment.**
    
    10. Model Inference
-       > Model yang sudah dilatih akan dicoba pada data yang bukan termasuk ke dalam train-set ataupun test-set. Data ini harus dalam format yang asli, bukan data yang sudah di-scaled. Gunakan model terbaik berdasarkan hasil Model Evaluation. Notebook Model Inference haruslah berbeda dengan notebook saat pembuatan model dilakukan.
+       > Model yang sudah dilatih akan dicoba pada data yang bukan termasuk ke dalam train-set ataupun test-set. Data ini dalam format yang asli, bukan data yang sudah di-scaled. menggunakan model terbaik berdasarkan hasil Model Evaluation. Notebook Model Inference berbeda dengan notebook saat pembuatan model dilakukan.
    
    11. Pengambilan Kesimpulan
-       > Pada bagian terakhir ini, **harus berisi** kesimpulan yang mencerminkan hasil yang didapat dengan *objective* yang sudah ditulis di bagian pengenalan.
+       > Pada bagian terakhir ini, **berisi** kesimpulan yang mencerminkan hasil yang didapat dengan *objective* yang sudah ditulis di bagian pengenalan.
 
-4. Notebook harus diupload dalam akun GitHub masing-masing student untuk selanjutnya dinilai.
+4. Notebook diupload dalam akun GitHub .
 
 ---
 
-## Assignment Submission
-
-- Simpan assignment pada sesi ini dengan nama :
-  * Modeling : `P1M2_<nama-student>.ipynb`, misal `P1M2_raka_ardhi.ipynb`.
-  * Model Inference : `P1M2_<nama-student>_inf.ipynb`, misal `P1M2_raka_ardhi_inf.ipynb`.
-
-- Push Assigment yang telah Anda buat ke akun Github Classroom Anda masing-masing.
+## Push Project
 
 - Untuk Model Deployment :
-  * Buat sebuah folder bernama `deployment` dan masukkan semua file yang berkaitan dengan deployment ke folder ini.
-  * Buat sebuah file bernama `url.txt` yang berisi URL Dataset dan URL deployment.
-  * Contoh bentuk isi repository dengan Model Deployment.
+  * folder bernama `deployment` semua file yang berkaitan dengan deployment ke folder ini.
+  * file bernama `url.txt` berisi URL Dataset dan URL deployment.
+  * bentuk isi repository dengan Model Deployment.
     ```
     ├── deployment/
     │   ├── app.py
@@ -133,104 +94,23 @@ Milestones 2 dikerjakan dalam format ***notebook*** dan ***Model Deployment*** d
     ├── P1M2_raka_ardhi_inf.ipynb
     ├── url.txt
     └── README.md
+    └── depan.jpg
     ```
 ---
+## Result
 
-## Assignment Rubrics
+Dalam analisis ini, dataset yang terkait dengan permainan League of Legends, khususnya pada fase 10 menit pertama dari pertandingan Ranked Diamond, telah melalui beberapa tahap penting untuk meningkatkan hasil model. Setelah melakukan eksplorasi data, penanganan nilai yang hilang, penanganan outliers, serta scaling dan PCA, berbagai model telah diuji dan dievaluasi menggunakan metrik F1-Score. Model SVM menunjukkan performa yang paling baik dalam hal F1-Score setelah proses tuning, sehingga dipilih sebagai model terbaik. Skor menunjukkan bahwa model tersebut memiliki kinerja yang cukup seimbang, sekitar 71%-73% secara keseluruhan.
 
-### Code Review
+## Conclusion & Business Impact
+Business Impact pada Riot sebagai Developers Game:
 
-| Criteria | Meet Expectations | Points |
-| --- | --- | --- |
-| Feature Engineering | Mampu melakukan preprocessing dataset sebelum melakukan proses modeling (split data, normalisasi, encoding, dll) | 35 pts |
-| KNN | Mengimplementasikan algoritma KNN pada domain kasus yang dipilih  | 5 pts |
-| SVM | Mengimplementasikan algoritma SVM pada domain kasus yang dipilih  | 5 pts |
-| Decision Tree | Mengimplementasikan algoritma Decision Tree pada domain kasus yang dipilih  | 5 pts |
-| Random Forest | Mengimplementasikan algoritma Random Forest pada domain kasus yang dipilih  | 5 pts |
-| Boosting | Mengimplementasikan salah satu algoritma Boosting pada domain kasus yang dipilih  | 5 pts |
-| Pipelines | Mengimplementasikan Pipeline pada domain kasus yang dipilih | 20 pts |
-| Cross Validation | Mengimplementasikan Cross Validation dengan Scikit-Learn | 25 pts |
-| Hyperparameter Tuning | Mengimplementasikan Hyperparameter Tuning dengan Scikit-Learn | 20 pts |
-| Model Inference | Mencoba model yang telah dibuat dengan data baru | 10 pts |
-| Runs Perfectly | Kode berjalan tanpa ada error. Seluruh kode berfungsi dan dibuat dengan benar. | 10 pts |
+1. Peningkatan Keseimbangan Permainan: Dengan menggunakan model yang telah dioptimalkan, DevOps Riot dapat memperoleh wawasan yang lebih baik tentang keseimbangan permainan di 10 menit pertama pada peringkat Diamond. Hal ini dapat membantu dalam menyesuaikan mekanika permainan atau mengubah parameter tertentu untuk memastikan bahwa pertandingan lebih seimbang dan adil antara Blue Team dan Red Team.
+2. Optimasi Pengalaman Pemain: Dengan mengidentifikasi dan mengatasi ketidakseimbangan di fase awal permainan, Riot dapat meningkatkan pengalaman permainan bagi pemain di tier Diamond. Ini dapat mengurangi frustrasi yang disebabkan oleh ketidakseimbangan dan meningkatkan kepuasan pemain, yang pada gilirannya dapat meningkatkan retensi dan keterlibatan pemain.
+3. Strategi Pengembangan Berbasis Data: Analisis yang dilakukan dengan metrik F1-Score menyediakan basis yang solid untuk pengambilan keputusan berbasis data. Riot dapat menggunakan informasi ini untuk menginformasikan strategi pengembangan dan pembaruan game, serta membuat penyesuaian yang diperlukan untuk meningkatkan kualitas dan keseimbangan permainan.
+4. Kinerja Model yang Terukur: Dengan memilih model SVM berdasarkan F1-Score, Riot dapat menggunakan pendekatan yang terbukti efektif untuk menganalisis dan memprediksi keseimbangan permainan. Ini memastikan bahwa model yang digunakan untuk analisis memiliki performa yang optimal dan dapat diandalkan dalam konteks yang dinamis dari permainan MOBA.
 
-```
-Pada rubrik Milestone 2 diatas terdapat point Cross Validation dan Hyperparameter Tuning (GridSearchCV, RandomSearchCV, dll). 
-Kedua hal yang dimaksud ini adalah dua hal yang berbeda bukan satu kesatuan. Petunjuk : 
+Secara keseluruhan, hasil dari analisis ini memberikan alat yang berharga bagi DevOps Riot untuk membuat penyesuaian yang meningkatkan keseimbangan dan kualitas permainan, dengan tujuan akhirnya adalah melihat apakah permainan tersebut memberikan hasil kemenangan yang tepat bagi setiap team yang bermain pada 10 menit pertama pada Rank Diamond agar menghindari kesalahan sistem atau mungkin kecurangan dari setiap pemainnya
 
-1. Lakukan model training dengan menggunakan parameter default (baseline model) dari setiap algoritma yang diminta.
-2. Kemudian, gunakan `cross_val_score` atau `cross_validate` untuk mencari nilai performansi `mean` dan `std` dari setiap model. 
-3. Pilih agoritma yang terbaik dari hasil poin 2.
-4. Lakukan Hyperparameter Tuning pada algoritma terbaik (berdasarkan poin 2) dengan menggunakan GridSearchCV, RandomSearchCV, dll.
-5. Bandingkan performansi antara sebelum dan sesudah dilakukan Hyperparameter Tuning.
-```
-
-### Concepts
-
-| Criteria | Meet Expectations | Points |
-| --- | --- | --- |
-| Classifications | Mampu menjawab pertanyaan dengan singkat, jelas, dan padat serta sesuai dengan konsep dan logika yang ada mengenai Conceptual Problems (10 pts each) | 30 pts |
-
-### Readability
-
-| Criteria | Meet Expectations | Points |
-| --- | --- | --- |
-| Tertata Dengan Baik | Semua baris kode terdokumentasi dengan baik dengan Markdown untuk penjelasan kode | 15 pts |
-
-```
-Kriteria tertata dengan baik diantaranya adalah: 
-
-1. Terdapat section Perkenalan yang jelas dan lengkap terkait masalah dan latar belakang masalah yang akan diselesaikan.
-2. Tidak menyalin markdown dari tugas lain.
-3. Import library rapih (terdapat dalam 1 cell dan tidak ada unused libs).
-4. Pemakaian fungsi markdown yang optimal (Heading, text formating, dll).
-5. Terdapat komentar pada setiap baris kode.
-6. Adanya pemisah yang jelas antar section, dll.
-7. Tidak adanya typo.
-```
-
-### Analysis
-
-| Criteria | Meet Expectations | Points|
-| --- | --- | --- |
-| Model Analysis | Menganalisa informasi dari model yang telah dibuat | 35 pts |
-| Overall Analysis | Menarik informasi/kesimpulan dari keseluruhan kegiatan yang dilakukan | 20 pts |
-
-```
-Contoh kriteria analisa yang baik diantaranya adalah: 
-
-1. Terdapat penjelasan macam-macam hasil metric evaluasi dan interpretasinya terhadap kasus yang diselesaikan.
-2. Dapat menjelaskan KELEBIHAN dan KELEMAHAN dari model yang dibuat DENGAN KAITANNYA DENGAN DOMAIN BUSINESS YANG DIHADAPI yang dibuktikan dengan eksplorasi sederhana (grafik, plot, teori, dll).
-3. Dapat memberikan statement untuk improvement selanjutnya dari model yang dibuat. 
-4. Dapat menyebutkan insight yang dapat diambil setelah proses EDA, dll.
-```
-
-### Model Deployment
-
-| Criteria | Meet Expectations | Points |
-| --- | --- | --- |
-| Model Deployment | Membuat webapps terhadap project yang telah dibuat. | 15 pts |
-
-```
-Catatan mengenai Model Deployment : 
-
-1. Ketiadaan URL deployment ataupun source code deployment di repository, akan tetap diperhitungkan untuk menilai bagian Model Deployment. 
-2. Tidak diperkenankan adanya informasi tambahan/informasi susulan seperti lupa memberikan URL deployment atau lupa mengupload source code via apapun (DM buddy, email, atau yang lain).
-3. Student akan dianggap tidak melakukan Model Deployment jika tidak ada URL deployment dan source code deployment di repository.
-```
-
----
-
-```
-Total Points : 260
-
-Catatan : Penilaian Milestone 2 juga dapat dipengaruhi oleh aktivitas student selama Phase 1 berlangsung, baik sesi kelas maupun sesi mentoring dengan buddy-nya masing-masing sehingga terdapat kemungkinan adanya penambahan atau pengurangan nilai diluar rubric yang telah disebutkan diatas.
-```
-
----
-
-## Notes
-
-* **Deadline : P1W4D4 pukul 18:00 WIB.**
-
-* **Keterlambatan pengumpulan tugas mengakibatkan skor Milestone 2 menjadi 0.**
+## Try App [HERE](https://huggingface.co/spaces/Bagusaja/Machine_Learning_concept_Milestone_2)
+### Notes
+Saat menjalankan link diatas harap pastikan **restart Space** pada Hugging Face kemudian tunggu hingga App muncul mungkin membutuhkan waktu untuk load appnya, and enjoy!
